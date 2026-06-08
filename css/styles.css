@@ -799,3 +799,118 @@ body::before {
     transition: none;
   }
 }
+
+/* Aim section (3rd block) */
+.aim-section {
+  width: 100%;
+  padding: 120px 32px;
+  position: relative;
+  z-index: 10;
+}
+
+.aim-section__container {
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 8px;
+}
+
+.aim-section__card {
+  padding: 56px 64px;
+  border-radius: 20px;
+  background-color: #11141b;
+  background-image: url('../assets/back.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+}
+
+.aim-section__title {
+  margin: 0 0 28px;
+  font-size: clamp(32px, 4vw, 44px);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  background: linear-gradient(90deg, #E6DEFF 0%, #A35CFA 48.08%, #E81F88 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.aim-section__text {
+  margin: 0 0 40px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #e5e7eb;
+}
+
+.aim-section__text:last-child {
+  margin-bottom: 0;
+}
+
+.aim-section__features {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.aim-section__feature {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.aim-section__icon {
+  flex-shrink: 0;
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+}
+
+.aim-section__feature-text {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.65;
+  color: #ffffff;
+}
+
+.aim-section__divider {
+  width: 1px;
+  align-self: stretch;
+  min-height: 120px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+@media (max-width: 900px) {
+  .aim-section {
+    padding: 80px 20px;
+  }
+
+  .aim-section__card {
+    padding: 40px 28px;
+  }
+
+  .aim-section__features {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .aim-section__divider {
+    width: 100%;
+    height: 1px;
+    min-height: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .aim-section__feature {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}
