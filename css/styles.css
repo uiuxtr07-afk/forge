@@ -821,7 +821,7 @@ body::before {
 }
 
 .aim-section__card {
-  padding: 56px 64px;
+  padding: 26px 34px;
   border-radius: 20px;
   background-color: #11141b;
   background-image: url('../assets/back.svg');
@@ -840,7 +840,7 @@ body::before {
 }
 
 .aim-section__text {
-  margin: 0 0 40px;
+  margin: 0 0 10px;
   font-size: 15px;
   font-weight: 400;
   line-height: 1.75;
@@ -856,7 +856,7 @@ body::before {
   grid-template-columns: 1fr auto 1fr;
   gap: 40px;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .aim-section__feature {
