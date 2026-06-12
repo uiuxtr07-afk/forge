@@ -362,7 +362,7 @@ body::before {
 
 .category-card__title {
   margin: 0 0 20px;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
   letter-spacing: -0.01em;
   color: #fff;
@@ -692,8 +692,8 @@ body::before {
 
 .scroll-sync-section__list {
   margin: 0;
-  padding: 0;
-  list-style: none;
+  padding-left: 20px;
+  list-style: disc;
   font-size: 15px;
   font-weight: 400;
   line-height: 1.75;
@@ -701,7 +701,12 @@ body::before {
 }
 
 .scroll-sync-section__list li {
-  margin-bottom: 4px;
+  margin-bottom: 8px;
+  padding-left: 4px;
+}
+
+.scroll-sync-section__list li::marker {
+  color: #ffffff;
 }
 
 .scroll-sync-section__list li:last-child {
@@ -827,15 +832,11 @@ body::before {
 }
 
 .aim-section__title {
-  margin: 0 0 28px;
-  font-size: clamp(32px, 4vw, 44px);
-  font-weight: 800;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
-  background: linear-gradient(351deg, #E6DEFF 0%, #A35CFA 48.08%, #E81F88 100%);
+  background: linear-gradient(90deg, #e6deff 0%, #a35cfa 48.08%, #e81f88 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 .aim-section__text {
